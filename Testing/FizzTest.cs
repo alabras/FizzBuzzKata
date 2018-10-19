@@ -13,5 +13,14 @@ namespace FizzBuzzKata.Testing
 
             Assert.Equal("Fizz", result);
         }
+
+        [Fact]
+        public void The_number_is_divisible_by_five_then_instead_Buzz(){
+            var fizzBuzz = new FizzBuzz();
+
+            var result = fizzBuzz.Get(5);
+
+            Assert.Equal("Buzz", result);
+        }
     }
 }
