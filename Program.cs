@@ -6,7 +6,10 @@ namespace FizzBuzzKata
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var fizzBuzz = new FizzBuzz();
+            for(var i = 1; i<100; i++){
+                Console.WriteLine(fizzBuzz.Get(i));
+            }
         }
     }
 }
