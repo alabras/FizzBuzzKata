@@ -33,5 +33,19 @@ namespace FizzBuzzKata
 
             Assert.Equal("FizzBuzz", result);
         }
+
+        [Theory]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(4)]
+        [InlineData(13)]
+        [InlineData(19)]
+        [InlineData(41)]
+        public void When_number_is_not_divisible_by_three_or_five_then_number(int number){
+
+            var result = _fizzBuzz.Get(number);
+
+            Assert.Equal(number.ToString(), result);
+        }
     }
 }
